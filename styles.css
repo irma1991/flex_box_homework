@@ -1,45 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+}
+ 
+html,body{
+    height: 100%;
+}
+ 
+body{
+    display: flex;
+    justify-content:center;
+ 
+}
+ 
+h2{
+    padding:10px;
+}
+ 
+p{
+    padding:10px;
+}
+ 
+.container{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+ 
 header{
-  background-color: red;
-  flex: 1 100%;
+    background-color:#edf89f;
+    padding:20px;
+    text-align:center;
+    text-transform: uppercase;
+}
+ 
+.wrapper{
+    display: flex;
+}
+.wrapper section{
+    padding:20px;
+}
+ 
+.wrapper section{
+    display: flex;
+    flex-flow:column;
+}
+ 
+.wrapper section article{
+    padding:20px;
+    margin-bottom:10px;
+ 
 }
 
-article{
-  background-color: green;
-  flex: 2 30%;
-}
-
-main{
-  background-color: tomato;
-  flex: 3 70%;
-}
-
-aside{
-  background-color: grey;
-  flex: 4 30%;
-}
-
-section:nth-of-type(1){
+article:nth-of-type(1){
   background-color: magenta;
-  flex: 5 70%;
+  flex-grow: 1;
 }
 
-section:nth-of-type(2){
+article:nth-of-type(2){
   background-color: aqua;
-  flex: 6 80%;
+  flex-grow: 2;
 }
 
-section:nth-of-type(3){
+article:nth-of-type(3){
   background-color: yellow;
-  flex: 7 20%;
+}
+
+article:nth-of-type(4){
+  background-color: tomato;
+}
+
+article:nth-of-type(5){
+  background-color: grey;
+}
+
+article:nth-of-type(6){
+  background-color: green;
 }
 
 footer{
   background-color: pink;
-  flex: 8 100%;
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
