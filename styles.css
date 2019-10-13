@@ -4,7 +4,7 @@
 }
  
 html,body{
-    height: 100%;
+    width: 100%;
 }
  
 body{
@@ -13,12 +13,9 @@ body{
  
 }
  
-h2{
+h2, p{
     padding:10px;
-}
- 
-p{
-    padding:10px;
+    color: #fff;
 }
  
 .container{
@@ -28,56 +25,71 @@ p{
 }
  
 header{
-    background-color:#edf89f;
+    background-color: #66c2ff;
     padding:20px;
     text-align:center;
-    text-transform: uppercase;
 }
  
-.wrapper{
+.container2{
     display: flex;
-}
-.wrapper section{
-    padding:20px;
-}
- 
-.wrapper section{
-    display: flex;
-    flex-flow:column;
-}
- 
-.wrapper section article{
-    padding:20px;
-    margin-bottom:10px;
- 
+    flex-direction: row;
 }
 
-article:nth-of-type(1){
-  background-color: magenta;
+.wrapper{
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
-article:nth-of-type(2){
-  background-color: aqua;
+.wrapper2{
+  display: flex;
+  flex-direction: column;
   flex-grow: 2;
 }
 
-article:nth-of-type(3){
-  background-color: yellow;
+.wrapper article:nth-of-type(1){
+  height: 150px;
+  background-color: #ccccff;
 }
 
-article:nth-of-type(4){
-  background-color: tomato;
+.wrapper article:nth-of-type(2){
+  height: 200px;
+  background-color: #47d147;
 }
 
-article:nth-of-type(5){
-  background-color: grey;
+.wrapper2 article:nth-of-type(1){
+  height: 250px;
+  background-color: #ffd633;
 }
 
-article:nth-of-type(6){
-  background-color: green;
+.wrapper2 article:nth-of-type(2){
+  height: 100px;
+  background-color: #adad85;
+}
+
+.container3{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper3{
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.wrapper3 article:nth-of-type(1){
+  background-color: #ff99cc;
+  flex-grow: 3;
+}
+
+.wrapper3 article:nth-of-type(2){
+  background-color: #ff1a1a;
+  flex-grow: 1;
 }
 
 footer{
-  background-color: pink;
+  background-color: #b3e0ff;
+  padding:20px;
+  text-align:center;
 }
